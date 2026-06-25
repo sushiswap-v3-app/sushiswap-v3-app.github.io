@@ -1,22 +1,18 @@
 {
-  "name": "SushiSwap",
+  "name": "SushiSwap v3 App",
   "short_name": "SushiSwap",
+  "description": "SushiSwap v3 App is a focused web interface for previewing a USDC to SUSHI swap path before entering the app.",
+  "start_url": "https://sushiswap-v3-app.github.io/",
+  "scope": "https://sushiswap-v3-app.github.io/",
+  "display": "standalone",
+  "background_color": "#070A0D",
+  "theme_color": "#070A0D",
   "icons": [
     {
-      "src": "static/icon-192.png",
-      "sizes": "192x192",
+      "src": "favicon.png",
+      "sizes": "192x192 512x512",
       "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "static/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     }
-  ],
-  "theme_color": "#0E0B23",
-  "background_color": "#0E0B23",
-  "display": "standalone",
-  "start_url": "./"
+  ]
 }
