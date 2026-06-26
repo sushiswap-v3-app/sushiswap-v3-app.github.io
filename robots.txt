@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://sushiswap-v3-app.github.io/sitemap.xml
